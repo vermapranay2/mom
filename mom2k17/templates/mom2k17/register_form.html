@@ -1,0 +1,125 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+{% block content %}
+		<!-- [ PAGE-SECTION ] -->
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/About.jpg' %}">
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ RAIN ANIMATION ] -->
+				<div id="particles-js"></div>
+				<!-- [ RAIN ANIMATION END ] -->
+
+				<!-- [ HOME-PAGE ] -->
+
+
+				<!-- [ AJAX-PAGE ] -->
+				<div id="ajax-page" class="page-wrapper vhm-item">
+
+
+<!-- [ ABOUT PAGE ] -->
+<!-- [ CONTACT PAGE ] -->
+<div id="contact" class="anim s01 pg-wrp">
+    <br><br><br><br><br><br>
+	<div class="container">
+
+		<!-- [ TITLE ] -->
+
+		<section class="title-wrapper anim fadeInUp s01 delay-0-5s">
+			<h2 class="h2 title">REGISTER</h2>
+            <span class="line"></span>
+			<p>
+				 Fee can be deposited to the account - "946220110000036" with a/c name- "MOM2K" at 'Bank Of India' (Branch name- "IIITM Branch, Gwalior", IFSC code- "BKID0009462")
+			</p>
+
+		</section>
+
+		<!-- [ CONTACT-BOX WRAPPER ] -->
+
+		<!-- [ CONTACT-BOX WRAPPER END ] -->
+
+		<!-- [ CONTACT US FORM ] -->
+		<div class="row">
+			<div class="col-md-12">
+				<div class="disable cnt-rmsg"><p id="returnmessage"></p></div>
+				<form id="cntForm" class="contact-form mb40" action="" method="post" accept-charset="utf-8">
+                    {% csrf_token %}
+					<div class="row">
+						<div class="col-md-6 col-sm-6 anim fadeInUp s01 delay-0-9s">
+							<div class="input-area">
+                                {{ form.error }}
+                                {{ form.name |attr:"class:form-control"|attr:"placeholder:Name"}}
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 anim fadeInUp s01 delay-1s">
+							<div class="input-area">
+                                {{ form.error }}
+								{{ form.email |attr:"class:form-control"|attr:"placeholder:Email"}}
+							</div>
+						</div>
+                        <div class="col-md-6 col-sm-6 anim fadeInUp s01 delay-1s">
+							<div class="input-area">
+                                {{ form.error }}
+								{{ form.city |attr:"class:form-control"|attr:"placeholder:City"}}
+							</div>
+                            <div class="input-area">
+                                {{ form.error }}
+								{{ form.phone_number |attr:"class:form-control"|attr:"placeholder:Phone Number"}}
+							</div>
+                            <div class="input-area">
+                                {{ form.error }}
+								{{ form.institute |attr:"class:form-control"|attr:"placeholder:Institute"}}
+							</div>
+                            <div class="input-area">
+                                {{ error }}
+                                {{ form.message |attr:"class:form-control" |attr:" placeholder:Message"}}
+							</div>
+
+
+						</div>
+                        <div class="col-md-6 col-sm-6 anim fadeInUp s01 delay-1s">
+							<div class="input-area">
+                                {{ form.error }}
+								{{ form.address |attr:"class:form-control"|attr:"placeholder:Address"}}
+							</div>
+						</div>
+
+
+						<div class="col-md-6 col-sm-6 anim fadeInUp s01 delay-1-1s">
+
+                            <h2>Events</h2>
+                            {{ form.error }}
+                            {{ form.event }}
+						</div>
+						<div class="col-md-12 col-sm-12 align-right anim fadeInUp s01 delay-1-2s">
+							<div class="button-wrp">
+								<button type="submit" class="btn btn-color" id="submit-1">Submit</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- [ CONTACT US FORM END ] -->
+
+	</div>
+</div>
+<!-- [ CONTACT PAGE END ] -->
+<!-- [ ABOUT PAGE END ] -->
+
+				</div>
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		{% endblock %}

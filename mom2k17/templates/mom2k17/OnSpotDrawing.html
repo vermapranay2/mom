@@ -1,0 +1,105 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+		<!-- [ PAGE-SECTION ] -->
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/osd.jpg' %}">
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ RAIN ANIMATION ] -->
+				<div id="particles-js"></div>
+				<!-- [ RAIN ANIMATION END ] -->
+				
+				<!-- [ AJAX-PAGE ] -->
+				<div id="ajax-page" class="page-wrapper vhm-item">
+				<!-- [ ABOUT PAGE ] -->
+<div id="about" class="anim s01 pg-wrp">
+	<div class="container">
+		
+		<!-- [ TITLE ] -->
+		<section class="title-wrapper anim fadeInUp s01 delay-0-2s">
+			<h1 class="h1 title tme"> Creations </h1>
+			<span class="line"></span>
+			<p>
+				On-Spot Drawing Competition
+			</p>
+		</section>
+
+		<div class="row gt60">
+
+			<!-- [ ABOUT-IMG-BOX ] -->	
+			<div class="col-md-5 col-sm-5 abt-img-wrp anim fadeInUp s01 delay-0-3s">
+				<div class="img-box">
+					<img src="{% static 'mom2k17/base/images/paintbrush.svg' %}" alt="img">
+				</div>
+			</div>
+			<!-- [ ABOUT-IMG-BOX END ] -->
+	
+			<div class="col-md-7 col-sm-7">
+
+				<!-- [ TEXT INFO ] -->
+				<div class="text-info">
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Creations is the On-Spot Drawing Competition that aims at unlocking the creativity of students.
+						Their imaginations are their only limits.
+						A topic will be provided on the event day and students have to turn their ideas on the sheets in the form of sketches or paintings.
+					</p>
+
+					<br/><br/>
+
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Participation
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						<p>Entry Fees: ₹ 100 per participant</p>
+						<p>The participants can either bring their own drawing materials or purchase the same from the stalls available in the fair</p>
+						<p>They can give their submission as a sketch or painting</p>
+						<p>The participants will only be provided with a drawing sheet</p>
+					</p>
+
+					<br/>
+
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Prizes
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						<p>Winners will get their sketch published in annual magazine of the institute</p>
+						<p>Winners will get a certificate and appropriate goodies and gift hampers</p> 
+					</p>
+				</div>
+				<!-- [ TEXT INFO END ] -->
+
+			</div>
+
+		</div>
+		<!-- [ ABOUT-CAROUSEL ] -->
+
+	</div>
+</div>
+<!-- [ ABOUT PAGE END ] -->		
+
+					
+				</div>
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+		{% endblock %}

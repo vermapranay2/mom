@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="MOM a national technical inovation fair ">
+	<meta name="author" content="pranayVerma">
+	<!-- <meta http-equiv="refresh" content="40; url=F:\HTML\Layout-1\index-7.html/> -->
+
+{% load staticfiles %}
+	<!-- Touch icons for android and iOS (Bookmark icons) -->
+	<link rel="shortcut icon" sizes="196x196" href="{% static 'mom2k17/loader/images/icons/icon-196x196.png' %}">
+	<link rel="apple-touch-icon" href="images/icons/touch-icon-iphone.png">
+
+
+
+
+	<title>MOM | 2K17</title>
+	<link href="http://fonts.googleapis.com/css?family=Exo:100,300,400|Raleway:400,600" rel="stylesheet" type="text/css">
+	<link href="{% static 'mom2k17/loader/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'mom2k17/loader/maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<!--<link href="css/vendor/bigvideo.css" rel="stylesheet" type="text/css">--><!-- Uncomment this if you use HTML5 Video in any of the scenes-->
+	<link href="{% static 'mom2k17/loader/css/combined/unified.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'mom2k17/loader/css/custom/slideshow.css' %}" rel="stylesheet" type="text/css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<!-- =================================================================
+	Corporate Teaser Scenes
+	================================================================== -->
+	<div id="corporate" class="sven-container" data-splash-image="images/slideshow/slide-7.jpg"  data-sound-loop="false">
+
+		<!-- sequenital-fall-lt -->
+		<div id="scene-1" class="sven-slide" data-anim="sequenital-fall-lt" data-alignment="right-bottom" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-1.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main" data-in-ease="Elastic.easeOut">Stimulating</h1>
+				<h1 class="lt-sub">curiosity</h1>
+			</div>
+		</div>
+
+		<!-- random-reveal-lt -->
+		<div id="scene-2" class="sven-slide" data-anim="random-reveal-lt" data-alignment="left-bottom" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-2.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main">Turn Imagination into </h1>
+				<h1 class="lt-sub">Innovations</h1>
+			</div>
+		</div>
+
+		<!-- rainfall-reveal-lt -->
+		<div id="scene-3" class="sven-slide" data-anim="rainfall-reveal-lt" data-alignment="center-center" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-3.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main">Giving wings to </h1>
+				<h1 class="lt-sub">Imagination</h1>
+			</div>
+		</div>
+
+		<!-- particles-reveal-lt -->
+		<div id="scene-4" class="sven-slide" data-anim="particles-reveal-lt" data-alignment="right-bottom" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-4.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main" data-in-ease="Elastic.easeOut">dream     create</h1>
+				<h1 class="lt-sub">inspire</h1>
+			</div>
+		</div>
+
+		<!-- random-alpha-reveal-lt -->
+		<div id="scene-5" class="sven-slide" data-anim="random-alpha-reveal-lt" data-alignment="left-bottom" data-mobile-alignment="center-center" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-5.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main" data-in-pattern="sequential">unlocking</h1>
+				<h1 class="lt-sub">creativity</h1>
+			</div>
+		</div>
+
+		<!-- flyin-reveal-lt -->
+		<div id="scene-6" class="sven-slide" data-anim="flyin-reveal-lt" data-alignment="right-bottom" data-scene-image="{% static 'mom2k17/loader/images/slideshow/slide-6.jpg' %}">
+			<div class="content-container">
+				<h1 class="lt-main">making ideas </h1>
+				<h1 class="lt-sub">happen</h1>
+			</div>
+		</div>
+
+		<!-- glitch-one-lt -->
+		<div id="scene-7" class="sven-slide coming-soon" data-anim="glitch-one-lt"  data-show-footer="true">
+			<div class="content-container">
+				<h1 class="lt-main">MOM  <span class="thin">2K17</span></h1>
+				<h1  class="lt-sub"><a href=" {% url 'home' %}"  id="pop-subscribe" class="btn btn-ghost" >>SUBSCRIBE</a></h1>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- =================================================================
+	Particles Instance
+	================================================================== -->
+	<!-- <div id="particles-js"></div> -->
+
+	<!-- =================================================================
+	Countdown Timer Instance
+	================================================================== -->
+	<!-- <h1 id="sven-countdown"></h1> -->
+
+	<!-- =================================================================
+	Sven Header (Teaser Controls And/Or Logo) - Absolutely positioned
+	================================================================== -->
+	<div class="sven-header">
+
+		<div class="logo-container pull-left">
+			<a href="#"><img src="{% static 'mom2k17/loader/images/iiitm2.png' %}" height="50" style="margin-top: 8px;"/></a>
+		</div>
+
+		<div class="controls-nav pull-right">
+			<!-- Playback speed control -->
+			<a class="speed-label" title="Speed Up/Down"><span>1.0x</span></a>
+
+			<!-- Sound Controls -->
+			<a class="sound_button" title="Sound On/Off"><i class="fa fa-volume-up"></i></a>
+
+			<!-- Play / Pause / Restart Controls -->
+			<a class="movie-button" title="Teaser Play/Pause"><i class="fa fa-play"></i></a>
+
+			<!-- Skip to last scene control -->
+			<a class="skip-button" title="Skip to last scene"><span>skip</span><i class="fa fa-angle-double-right"></i></a>
+		</div>
+
+	</div>
+
+	<!-- =================================================================
+	Sven Footer  - Absolutely positioned
+	(Hashtag / Social Icons / Subscribe Buttons / Days Left)
+	================================================================== -->
+	<div class="sven-footer">
+		<!-- Days Left / Subscribe / Hashtag-->
+		<div class="sven-info pull-right">
+			<!-- <a id="pop-subscribe" class="btn btn-ghost" data-toggle="modal" data-target="#subscribe-page">SUBSCRIBE</a>
+			<h1 class="days-left"></h1> -->
+			<a class="hashtag" style="text-transform: lowercase" target="">#mom2k17</a>
+		</div>
+
+		<!-- Social Icons-->
+		<div class="sven-info pull-left">
+			<ul class="social-icons">
+				<li><a href="https://www.facebook.com/MOM2K17/"><i class="fa fa-facebook"></i></a></li>
+
+			</ul>
+		</div>
+	</div>
+
+	<!-- =================================================================
+		Splash page content (If autostart is set to false)
+	================================================================== -->
+	<div class="splash-page abs-fs">
+		<div class="abs-center">
+			<a id="play-video" class="video-play-button play-button">
+		  		<span>GO</span>
+			</a>
+		</div>
+	</div>
+
+	<!-- =================================================================
+	Preloader Instance
+	================================================================== -->
+	<div class="loader-container">
+		<div class="abs-center">
+			<!-- <div class="sk-double-bounce">
+        		<div class="sk-child sk-double-bounce1"></div>
+        		<div class="sk-child sk-double-bounce2"></div>
+      		</div> -->
+
+			<!-- <div class="sk-spinner sk-spinner-pulse"></div> -->
+
+			<div class="sk-three-bounce">
+        		<div class="sk-child sk-bounce1">M</div>
+        		<div class="sk-child sk-bounce2">O</div>
+        		<div class="sk-child sk-bounce3">M</div>
+      		</div>
+		</div>
+	</div>
+
+	<!-- =================================================================
+	Subscribe Modal
+	================================================================== -->
+	<div id="subscribe-page" class="sven-modal modal fade" role="dialog">
+		<div class="modal-dialog">
+			<!-- Start of Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row row-md-table">
+
+						<!-- Left Image section-->
+						<div class="col-md-5 card-image bg-cover">
+	                    </div>
+
+						<!-- Subscribe / Contact Section-->
+						<div class="col-md-7 form-container">
+							<div class="content">
+								<h3 class="text-center">Subscribe now</h3>
+								<p>Gain exclusive access into our release on August 6th 2016 by signing up with our newsletter. Join us on the day of release.</p>
+
+								<!-- SUCCESS OR ERROR MESSAGES -->
+								<p class="subscribe-label sven-message"></p>
+
+								<form id="subscription" class="sven-form" method="POST">
+
+									<div class="col-xs-12" style="padding: 0">
+										<div class="form-group">
+											<input type="email" id="userEmail" class="form form-control" placeholder="Your Email..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email...'" name="email" required="">
+										</div>
+									</div>
+
+									<div class="button-holder text-center">
+										<button type="submit" id="submit-form" class="btn btn-color">get notified</button>
+									</div>
+
+								</form>
+
+								<button type="button" class="close close-form" data-dismiss="modal">&times;</button>
+							</div>
+						</div>
+						<!-- End of Subscribe / Contact Section-->
+
+					</div>
+				</div>
+			</div>
+			<!-- End of Modal content-->
+		</div>
+	</div>
+
+	<!-- =================================================================
+	Compiled JS plugins
+	================================================================== -->
+	<script src="{% static 'mom2k17/loader/ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' %}"></script>
+	<script src="{% static 'mom2k17/loader/maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'mom2k17/loader/js/sven-transitions.js' %}"></script>
+	<!--<script src="js/combined/html5-video.js"></script>--><!-- Uncomment this if you use HTML5 Video in any of the scenes-->
+	<script src="{% static 'mom2k17/loader/js/combined/unified.js' %}"></script>
+	<script src="{% static 'mom2k17/loader/js/main.js' %}"></script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-71851550-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+
+</body>
+
+
+</html>

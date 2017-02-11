@@ -1,0 +1,213 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+		<!-- [ PAGE-SECTION ] -->
+    <main id="main" class="background vd-bg " data-image="{% static 'mom2k17/base/images/Expressions.jpg' %}">
+
+
+			<!-- BACKGROUND VIDEO -->
+			<a id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=uwk-XskXCI4',containment:'.vd-bg',showControls:true, autoPlay:true, loop:true, vol:50, mute:true, startAt:76, opacity:1, addRaster:true, quality:'default', optimizeDisplay:true}">My video</a>
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+            <!-- STAR ANIMATION -->
+			<div class="bg-animation">
+				<div id='stars'></div>
+				<div id='stars2'></div>
+				<div id='stars3'></div>
+				<div id='stars4'></div>
+			</div>
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ HOME-PAGE ] -->
+
+					<div class="container full-width">
+                        <br><br><br>
+
+						<!-- [ LOGO ] -->
+						<div class="logo ac anim fadeInUp s01 delay-0-5s">
+							<div class="logo-wrp">
+								<img src="{% static 'mom2k17/base/images/MOM.png' %}" alt="Logo">
+							</div>
+							<div class="text-center" style="padding:15px 0">presents</div>
+							<br/>
+							<h1 style="transform: scale(2)"><span style="color: #e57373">E</span><span style="color: #ab47bc">x</span><span style="color: #5c6bc0">p</span><span style="color: #2196f3">r</span><span style="color: #00bcd4">e</span><span style="color: #009688">s</span><span style="color: #4caf50">s</span><span style="color: #8bc34a">i</span><span style="color: #cddc39">o</span><span style="color: #ffeb3b">n</span><span style="color: #ffa726">s</span></h1>
+						</div>
+						<!-- [ LOGO END ] -->
+
+						<!-- [ TAGLINE ] -->
+						<div class="tagline ac anim fadeInUp s01 delay-0-6s">
+
+							<!-- ANIMATION TEXT -->
+							<div class="carousel-widget text-carousel" data-itemrange="false" data-in="zoomIn" data-out="slideOutDown" data-autoplay="true" data-loop="true" data-items="1" data-mouseDrag="false" data-touchDrag="false">
+								<div class="carousel">
+
+									<div class="owl-carousel owl-theme">
+
+										<div class="item">
+											<h2>Relax, Rewind, Repeat</h2>
+										</div>
+
+										<div class="item">
+											<h2 style="color: #ffcdd2">Feast your eyes &amp; ears</h2>
+										</div>
+
+										<div class="item">
+											<h2 style="color: #bbdefb">Single word Just Awesome..!</h2>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+							<br/><br/>
+							<p >
+								'You don't leave from here without having fun'<br/><br/>
+
+As the fair sails to its shore, get ready to feast your eyes and ears on the eniticing performances coming together this year as 'Expressions'. The cultural eve will fill you up with all the spirit &amp; exhilaration. Loose yourself to all the excitement and experience a flavour of entertainment with MOM-2K17
+							</p>
+						</div>
+						<!-- [ TAGLINE END ] -->
+
+					</div>
+                <div class="row anim fadeInUp s01 delay-0-6s">
+
+
+				<div class="carousel-widget team-box-carousel container-fluid" data-itemrange="0,1|520,1|600,1|768,2|900,4">
+					<div class="carousel col-md-8 ">
+
+						<div class="owl-carousel owl-theme col-md-offset-3">
+
+							<!-- TEAM-BOX -->
+							<div class="item">
+								<div class="team-box">
+									<div class="image">
+										<img style="opacity: 0.6" src="{% static 'mom2k17/images/posters/expressions/Revolution 21 super final 2.jpg' %}" alt="team">
+									</div>
+									<div class="text vhm">
+										<div class="detail vhm-item">
+											<h4 class="h-text">Revolution21</h4>
+											<span class="small-text">@Revolution21official</span>
+											<div class="social-link">
+												<a class="icon vhm" href="https://www.facebook.com/Revolution21official/" target="_blank">
+													<span class="box"></span>
+													<i class="fa fa-facebook vhm-item"></i>
+												</a>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="item">
+								<div class="team-box">
+									<div class="image">
+										<img style="opacity: 0.6" src="{% static 'mom2k17/images/posters/expressions/model2-min.jpg' %}" alt="team">
+									</div>
+									<div class="text vhm">
+										<div class="detail vhm-item">
+											<h4 class="h-text">Divyansh Kacholia</h4>
+											<span class="small-text">@dvk.thebeatboxer</span>
+											<div class="social-link">
+												<a class="icon vhm" href="https://www.facebook.com/dvk.thebeatboxer/" target="_blank">
+													<span class="box"></span>
+													<i class="fa fa-facebook vhm-item"></i>
+												</a>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="item">
+								<div class="team-box">
+									<div class="image">
+										<img style="opacity: 0.6" src="{% static 'mom2k17/images/posters/expressions/singer.jpg' %}" alt="team">
+									</div>
+									<div class="text vhm">
+										<div class="detail vhm-item">
+											<h4 class="h-text">Sunil Kumar</h4>
+											<span class="small-text"></span>
+											<div class="social-link">
+{#												<a class="icon vhm" href="#">#}
+{#													<span class="box"></span>#}
+{#													<i class="fa fa-facebook vhm-item"></i>#}
+{#												</a>#}
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+                            <div class="item">
+								<div class="team-box">
+									<div class="image">
+										<img style="opacity: 0.6" src="{% static 'mom2k17/images/posters/expressions/rock-min.jpg' %}" alt="team">
+									</div>
+									<div class="text vhm">
+										<div class="detail vhm-item">
+											<h4 class="h-text">Banned Frequency</h4>
+											<span class="small-text">@bannedfrequency</span>
+											<div class="social-link">
+												<a class="icon vhm" href="https://www.facebook.com/bannedfrequency/" target="_blank">
+													<span class="box"></span>
+													<i class="fa fa-facebook vhm-item"></i>
+												</a>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+
+
+						</div>
+{#						<div class="carousel-btn">#}
+{#							<a class="vhm btn md line-button prev">#}
+{#								<span class="vhm-item">#}
+{#									<i class="fa fa-angle-left"></i>#}
+{#								</span>#}
+{#							</a>#}
+{#							<a class="vhm btn md line-button next">#}
+{#								<span class="vhm-item">#}
+{#									<i class="fa fa-angle-right"></i>#}
+{#								</span>#}
+{#							</a>#}
+{#						</div>#}
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+<!-- [ PORTFOLIO-1 PAGE END ] -->
+
+
+
+
+				</div>
+
+
+				<!-- [ HOME-PAGE END ] -->
+
+				<!-- [ AJAX-PAGE ] -->
+
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+{#			<div class="nc-overlay"></div>#}
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+{% endblock %}

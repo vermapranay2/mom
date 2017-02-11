@@ -1,0 +1,209 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content={{ title }}>
+	<meta name="keywords" content="mom,mind over matter,abv-iiitm,atal bihari vajpayee,technical,model,exhibition,technical model exhibition,quiz,cultural,Expressions">
+	<meta name="author" content="Pranay Verma">
+	<title>{{ title }}</title>
+
+	<!-- [ FONT-AWESOME ICON ] -->
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/lib/font-awesome-4.3.0/css/font-awesome.min.css' %}">
+
+	<!-- [ PLUGIN STYLESHEET ] -->
+	<link rel="shortcut icon" type="image/x-icon" href="{% static 'mom2k17/images/nc-fav.png' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/owl.carousel.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/magnific-popup.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/jquery.mCustomScrollbar.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/vegas.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/jquery.mb.YTPlayer.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/partical-animation.css' %}">
+
+	<!-- [ DEFAULT STYLESHEET ] -->
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/lib/bootstrap/css/bootstrap-theme.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/lib/bootstrap/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/reset.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/structure.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/main-style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/responsive.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/star-animation.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'mom2k17/base/css/bubble.css' %}">
+
+<style>
+    .logo2{
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	z-index: 0;
+}
+.logo2 .logo-wrp2{ display: inline-block; width: 80px; }
+.logo2 .logo-wrp2 img{ width: 100%; max-width: 100%; }
+    .logo2{ top: 20px; left: 20px; }
+    .logo2{
+		position: fixed;
+	}
+	.logo2 .logo-wrp2{ width: 60px; }
+</style>
+</head>
+<body class="single-image">
+
+	<div class="page-loader-wrapper">
+		<div class="loader">
+
+		</div>
+	</div>
+
+	<!-- [ MAIN-WRAPPER ] -->
+	<div id="main-wrapper">
+
+		<!-- [ MENU-ICON ] -->
+		<a href="#nc-menu" class="nc-menu-trigger"><span>Menu</span></a>
+
+
+                {% block content %}
+                {% endblock %}
+
+
+
+
+        			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+		<!-- [ NAVIGATION ] -->
+		<nav class="nc-menu-container" id="nc-menu">
+			<header class="nav-header vm">
+				<a href="#0" class="nc-menu-close"></a>
+			</header>
+
+			<ul id="navigation" class="nc-menu">
+				<li class="nc-active" data-menu="index">
+					<a class="link-box vhm nav-link" data-page="home.html" href="{% url 'home' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-home vhm-item"></i></span>
+							<span class="text">Home</span>
+						</span>
+					</a>
+				</li>
+
+				<li data-menu="about">
+					<a class="odd link-box vhm nav-link" data-page="pages/about.html" href="{% url 'about' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-info vhm-item"></i></span>
+							<span class="text">About</span>
+						</span>
+					</a>
+				</li>
+                <li data-menu="about">
+					<a class="odd link-box vhm nav-link" data-page="pages/about.html" href="{% url 'message' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-envelope-open-o"></i></span>
+							<span class="text">Message</span>
+						</span>
+					</a>
+				</li>
+                <li data-menu="about">
+					<a class="odd link-box vhm nav-link" data-page="pages/about.html" href="{% url 'register' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-sign-in vhm-item"></i></span>
+							<span class="text">Register</span>
+						</span>
+					</a>
+				</li>
+
+				<li data-menu="about">
+					<a class="odd link-box vhm nav-link" data-page="pages/about-1.html" href="{% url 'events' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-calendar-check-o vhm-item"></i></span>
+							<span class="text">Events</span>
+						</span>
+					</a>
+				</li>
+                <li data-menu="our-team">
+					<a class="odd link-box vhm nav-link" data-page="pages/our-team.html" href="{% url 'flash' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-superpowers vhm-item"></i></span>
+							<span class="text">Flash</span>
+						</span>
+					</a>
+				</li>
+
+
+
+				<li data-menu="our-team">
+					<a class="odd link-box vhm nav-link" data-page="pages/our-team.html" href="{% url 'expressions' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-moon-o vhm-item"></i></span>
+							<span class="text">Expressions</span>
+						</span>
+					</a>
+				</li>
+                <li data-menu="our-team">
+					<a class="odd link-box vhm nav-link" data-page="pages/our-team.html" href="{% url 'workshop' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-code vhm-item"></i></span>
+							<span class="text">Workshops</span>
+						</span>
+					</a>
+				</li>
+
+				<li data-menu="our-team">
+					<a class="odd link-box vhm nav-link" data-page="pages/our-team-1.html" href="{% url 'team' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-users vhm-item"></i></span>
+							<span class="text">Team</span>
+						</span>
+					</a>
+				</li>
+
+				<li data-menu="portfolio-2">
+					<a class="odd link-box vhm nav-link" data-page="pages/portfolio.html" href="{% url 'sponsors' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-handshake-o vhm-item"></i></span>
+							<span class="text">Sponsors</span>
+						</span>
+					</a>
+				</li>
+
+				<li data-menu="services">
+					<a class="odd link-box vhm nav-link" data-page="pages/services.html" href="{% url 'hospi' %}">
+						<span class="vhm-item inner-wrp">
+							<span class="icon vhm"><i class="fa fa-building vhm-item"></i></span>
+							<span class="text">Hospitality</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- [ NAVIGATION END ] -->
+
+	</div>
+	<!-- [ MAIN-WRAPPER END ] -->
+
+	<!-- [ DEFAULT SCRIPT ] -->
+	<script src="{% static 'mom2k17/base/js/jquery-1.11.3.min.js' %}"></script>
+
+	<!-- [ PLUGIN SCRIPT ] -->
+	<script src="{% static 'mom2k17/base/js/plugins.js' %}"></script>
+	<script src="{% static 'mom2k17/base/js/particles.min.js' %}"></script>
+	<script src="{% static 'mom2k17/base/js/partical-animation.js' %}"></script>
+    <script src="{% static 'mom2k17/base/js/vegas.min.js' %}"></script>
+    <script src="{% static 'mom2k17/base/js/jquery.mb.YTPlayer.min.js' %}"></script>
+    <script src="{% static 'mom2k17/base/js/video-bg.js' %}"></script>
+    <script src="{% static 'mom2k17/base/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'mom2k17/base/js/particle-anim-2.js' %}"></script>
+	<!-- [ COMMON SCRIPT ] -->
+	<script src="{% static 'mom2k17/base/js/common.js' %}"></script>
+
+
+
+</body>
+</html>

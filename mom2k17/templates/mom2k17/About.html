@@ -1,0 +1,82 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+		<!-- [ PAGE-SECTION ] -->
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/About.jpg' %}">
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ RAIN ANIMATION ] -->
+				<div id="particles-js"></div>
+				<!-- [ RAIN ANIMATION END ] -->
+
+				<!-- [ HOME-PAGE ] -->
+				
+
+				<!-- [ AJAX-PAGE ] -->
+				<div id="ajax-page" class="page-wrapper vhm-item">
+					
+
+<!-- [ ABOUT PAGE ] -->
+<div id="about" class="anim s01 pg-wrp">
+	<div class="container">
+		
+		<!-- [ TITLE ] -->
+		<section class="title-wrapper anim fadeInUp s01 delay-0-2s">
+			<h1 class="h1 title"> About </h1>
+			<span class="line"></span>
+			<p>
+				Mind Over Matter 2k17 - Technology for Clean India
+			</p>
+		</section>
+
+		<div class="row gt60">
+
+			<!-- [ ABOUT-IMG-BOX ] -->	
+			<div class="col-md-5 col-sm-5 abt-img-wrp anim fadeInUp s01 delay-0-3s">
+				<div class="img-box">
+					<img src="{% static 'mom2k17/base/images/MOM.png' %}" alt="img">
+				</div>
+			</div>
+			<!-- [ ABOUT-IMG-BOX END ] -->
+	
+			<div class="col-md-7 col-sm-7">
+
+				<!-- [ TEXT INFO ] -->
+				<div class="text-info">
+					<p class="anim fadeInUp s01 delay-0-5s">
+The aim of this Technical Innovation Fair is to put up a show specializing in defying your
+imagination, breaking boundaries and revolutionizing basic science and technology.
+The vision is to promote innovation and invention in technology, with focus on technologies
+aimed at contributing positively to the environment and to the society. It also offers closer
+interaction between technology seekers and providers. It also encourages creative thinking,
+providing exploratory experiences to the young minds. Our mission is to encompass as many
+participants as possible in sharing their knowledge. 
+					</p>
+				</div>
+				<!-- [ TEXT INFO END ] -->
+
+			</div>
+
+		</div>
+		<!-- [ ABOUT-CAROUSEL ] -->
+
+	</div>
+</div>
+<!-- [ ABOUT PAGE END ] -->		
+
+				</div>
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		{% endblock %}

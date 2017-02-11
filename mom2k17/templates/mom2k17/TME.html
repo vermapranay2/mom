@@ -1,0 +1,106 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+		<!-- [ PAGE-SECTION ] -->
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/tme.jpg' %}">
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ RAIN ANIMATION ] -->
+				<div id="particles-js"></div>
+				<!-- [ RAIN ANIMATION END ] -->
+				
+				<!-- [ AJAX-PAGE ] -->
+				<div id="ajax-page" class="page-wrapper vhm-item">
+				<!-- [ ABOUT PAGE ] -->
+<div id="about" class="anim s01 pg-wrp">
+	<div class="container">
+		
+		<!-- [ TITLE ] -->
+		<section class="title-wrapper anim fadeInUp s01 delay-0-2s">
+			<h1 class="h1 title tme"> Technical Model Exhibition </h1>
+			<span class="line"></span>
+			<p>
+				Mind Over Matter 2k17 - Technology for Clean India
+			</p>
+		</section>
+
+		<div class="row gt60">
+
+			<!-- [ ABOUT-IMG-BOX ] -->	
+			<div class="col-md-5 col-sm-5 abt-img-wrp anim fadeInUp s01 delay-0-3s">
+				<div class="img-box">
+					<img src="{% static 'mom2k17/base/images/tme-front.png' %}" alt="img">
+				</div>
+			</div>
+			<!-- [ ABOUT-IMG-BOX END ] -->
+	
+			<div class="col-md-7 col-sm-7">
+
+				<!-- [ TEXT INFO ] -->
+				<div class="text-info">
+					<p class="anim fadeInUp s01 delay-0-5s">
+						MOM 2k17 provides an opportunity for the young and nurturing minds to witness the achievements in technology and to make innovative models.
+					</p>
+
+					<br/><br/>
+
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Participation
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						<p>No Entry Fees</p>
+						<p>Participation in teams of 2</p>
+						<p>Models must be unique and innovative</p>
+						<p>An Abstract of the project is to be uploaded</p>
+						<p>Deadline for the submission of abstract is 20 December 2016</p>
+						<p>Top projects will be selected for exhibition</p>
+						<p>However a caution fee of Rs.300 has to be submitted which will be refunded on the event days</p>
+					</p>
+
+					<br/>
+
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Prizes
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						<p>First Prize: ₹ 12,000 + Sponsored Gifts</p>
+						<p>Second Prize: ₹ 6,000 + Sponsored Gifts</p>
+						<p>Winning model will be promoted further for patenting by ABV-IIITM</p> 
+					</p>					
+				</div>
+				<!-- [ TEXT INFO END ] -->
+
+			</div>
+
+		</div>
+		<!-- [ ABOUT-CAROUSEL ] -->
+
+	</div>
+</div>
+<!-- [ ABOUT PAGE END ] -->		
+
+					
+				</div>
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+		{% endblock %}

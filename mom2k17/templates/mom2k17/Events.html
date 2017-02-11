@@ -1,0 +1,125 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/event.jpg' %}">
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+
+				<!-- [ RAIN ANIMATION ] -->
+				<div id="particles-js"></div>
+				<!-- [ RAIN ANIMATION END ] -->
+
+				<!-- [ HOME-PAGE ] -->
+				<!-- [ TITLE ] -->
+		<section class="title-wrapper anim fadeInUp s01 delay-0-2s">
+			<h1 class="h1 title"> Events </h1>
+			<span class="line"></span>
+			<p>
+				Mind Over Matter 2k17
+			</p>
+		</section>
+				<!-- [ HOME-PAGE END ] -->
+
+				<!-- [ AJAX-PAGE ] -->
+				<div class="carousel-widget portfolio-carousel anim s01 pg-wrp" data-itemrange="0,1|420,1|600,1|768,2|980,4" data-hauto="false" data-center="true" data-loop="true" data-margin="10">
+	<div class="carousel anim fadeIn s01 delay-0-2s">
+		
+		<div class="owl-carousel owl-theme">
+			
+			
+
+			<!-- TEAM-BOX -->
+            <a href="{% url 'tme' %}">
+			<div class="item">
+				<div  class="portfolio-box">
+					<img  src="{% static 'mom2k17/base/images/posters/techno.jpg' %}" alt="img">
+					<div class="portfolio-detail">
+						<h5 class="h-text">Technical Model Exhibition</h5>
+						<p>Bring models that can help building a Clean India</p>
+					</div>
+				</div>
+			</div>
+            </a>
+			<!-- TEAM-BOX -->
+			<a href="{% url 'appcorner' %}">
+                <div class="item">
+				<div class="portfolio-box">
+					<img src="{% static 'mom2k17/base/images/posters/appscorner.jpg' %}" alt="img">
+					<div class="portfolio-detail">
+						<h5 class="h-text">Apps Corner</h5>
+						<p>Bring your app &amp; participate</p>
+					</div>
+				</div>
+			</div>
+            </a>
+
+			<!-- TEAM-BOX -->
+            <a href="{% url 'brainwave' %}">
+			<div class="item">
+				<div class="portfolio-box">
+					<img src="{% static 'mom2k17/base/images/posters/brainwave.jpg' %}" alt="img">
+					<div class="portfolio-detail">
+						<h5 class="h-text">BrainWave</h5>
+						<p>Innovative Idea Presentation Competition</p>
+					</div>
+				</div>
+			</div>
+                </a>
+
+			<!-- TEAM-BOX -->
+                <a href="{% url 'quiz' %}">
+			<div class="item">
+				<div class="portfolio-box">
+					<img src="{% static 'mom2k17/base/images/posters/quiz.jpg' %}" alt="img">
+					<div class="portfolio-detail">
+						<h5 class="h-text">The Quiz</h5>
+						<p>Tickle your Grey Matter</p>
+					</div>
+				</div>
+			</div>
+                    </a>
+
+			<!-- TEAM-BOX -->
+                    <a href="{% url 'osd' %}">
+			<div class="item">
+				<div class="portfolio-box">
+					<img src="{% static 'mom2k17/base/images/posters/creations.jpg' %}" alt="img">
+					<div class="portfolio-detail">
+						<h5 class="h-text">Creations</h5>
+						<p>On-Spot Drawing Contest</p>
+					</div>
+				</div>
+			</div>
+                </a>
+		</div>
+		<div class="carousel-btn">
+			<a class="vhm btn md line-button prev">
+				<span class="vhm-item">
+					<i class="fa fa-angle-left"></i>
+				</span>
+			</a>
+			<a class="vhm btn md line-button next">
+				<span class="vhm-item">
+					<i class="fa fa-angle-right"></i>
+				</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+		{% endblock %}

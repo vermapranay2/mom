@@ -1,0 +1,130 @@
+{% extends 'mom2k17/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+		<!-- [ PAGE-SECTION ] -->
+		<main id="main" class="background" data-image="{% static 'mom2k17/base/images/Hospi.jpg' %}">
+
+
+			<!-- [ BACKGROUND-OVERLAY ] -->
+			<div class="overlay" style="background-color: rgba(0,0,0,0.6)"></div>
+			<!-- [ BACKGROUND-OVERLAY END ] -->
+
+			<div class="nc-content-section index nc-active vhm">
+                <!-- [ BUBBLE-CANVAS ] -->
+			<canvas id="bg"></canvas>
+			<!-- [ BUBBLE-CANVAS END ] -->
+
+{#				<!-- [ RAIN ANIMATION ] -->#}
+{#				<div id="particles-js"></div>#}
+{#				<!-- [ RAIN ANIMATION END ] -->#}
+
+				<!-- [ HOME-PAGE ] -->
+				
+
+				<!-- [ AJAX-PAGE ] -->
+				<div id="ajax-page" class="page-wrapper vhm-item">
+					
+
+<!-- [ ABOUT PAGE ] -->
+<div id="about" class="anim s01 pg-wrp">
+	<div class="container">
+		
+		<!-- [ TITLE ] -->
+		<section class="title-wrapper anim fadeInUp s01 delay-0-2s">
+			<h1 class="h1 title"> Hospitality </h1>
+			<span class="line"></span>
+			
+		</section>
+
+		<div class="row gt60">
+
+			<!-- [ ABOUT-IMG-BOX ] -->	
+			<div class="col-md-5 col-sm-5 abt-img-wrp anim fadeInUp s01 delay-0-3s">
+				<div class="img-box">
+					<img src="{% static 'mom2k17/base/images/prayer.png' %}" alt="img">
+				</div>
+			</div>
+			<!-- [ ABOUT-IMG-BOX END ] -->
+	
+			<div class="col-md-7 col-sm-7">
+
+				<!-- [ TEXT INFO ] -->
+				<div class="text-info">
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							How To Reach Us
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Gwalior Railway Station (5 km)
+					</p>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Rajmata Vijayaraje Scindia City Airport (13 km)
+					</p>
+
+					<br/><br/>
+
+                    <section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Fare
+						</h4>
+						<span class="line"></span>
+					</section>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Railway Station to College : ₹ 70
+					</p>
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Airport To College : ₹150
+					</p>
+                    
+					<br/><br/>
+
+					<section class="title-wrapper sub anim fadeInUp s01 delay-0-4s">
+						<h4 class="h4 title">
+							Hospitality
+						</h4>
+						<span class="line"></span>
+					</section>
+					
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Hospitality Kit
+					</p>
+
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Free accomodation is availible for registered students only
+					</p>
+					
+					<p class="anim fadeInUp s01 delay-0-5s">
+						Students should bring their identity proofs (Adhaar, passport, etc.) for entry.
+					</p>
+
+					<p class="anim fadeInUp s01 delay-0-5s">
+						No entry fee will be charged for visiting our college. 
+					</p>
+				</div>
+				<!-- [ TEXT INFO END ] -->
+
+			</div>
+
+		</div>
+		<!-- [ ABOUT-CAROUSEL ] -->
+
+	</div>
+</div>
+<!-- [ ABOUT PAGE END ] -->		
+
+				</div>
+				<!-- [ AJAX-PAGE END ] -->
+
+			</div>
+
+			<!-- [ OC-CLICK OVERLAY ] -->
+			<div class="nc-overlay"></div>
+			<!-- [ OC-CLICK OVERLAY END ] -->
+
+		</main>
+		<!-- [ PAGE-SECTION END ] -->
+
+		{% endblock %}
